@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Speech Project | AI Voice Emotion Recognition</title>
+    <meta name="description" content="Detect human emotions from speech using AI and machine learning. Upload or record audio and get instant results.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <header class="header">
+        <div class="logo">
+            <i class="fa-solid fa-wave-square"></i>
+            <span>Emotion<strong>AI</strong></span>
+        </div>
+        <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="#demo">Demo</a>
+            <a href="https://github.com/sudhir-chaturvedi" target="_blank" class="btn-github"><i class="fa-brands fa-github"></i> GitHub</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <div class="badge">Next-Gen AI Speech Analysis</div>
+                <h1>Decode the Unseen Emotion in Every Word.</h1>
+                <p>Upload a voice recording and let our state-of-the-art machine learning model classify the emotion with high accuracy. Powered by SVM and trained on the RAVDESS dataset.</p>
+                <div class="hero-actions">
+                    <a href="#demo" class="btn btn-primary">Try it Now <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="sound-wave-container">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="demo" class="demo-section">
+            <div class="glass-panel">
+                <h2>Try the Demo</h2>
+                <p>Upload a .wav file to see the prediction</p>
+                
+                <div class="upload-area" id="drop-area">
+                    <i class="fa-solid fa-cloud-arrow-up upload-icon"></i>
+                    <h3>Drag & Drop your audio file here</h3>
+                    <p>or</p>
+                    <label class="btn btn-outline" for="file-upload">Browse Files</label>
+                    <input type="file" id="file-upload" accept="audio/wav" hidden>
+                    <div id="file-name" class="file-name"></div>
+                </div>
+
+                <div class="action-area">
+                    <button id="analyze-btn" class="btn btn-primary btn-large" disabled>
+                        <span>Analyze Emotion</span>
+                        <div class="spinner" id="spinner"></div>
+                    </button>
+                </div>
+
+                <div class="result-area" id="result-area">
+                    <h3>Detected Emotion:</h3>
+                    <div class="emotion-result" id="emotion-result">
+                        <i class="fa-solid fa-face-smile"></i>
+                        <span id="emotion-text">Happy</span>
+                    </div>
+                </div>
+                
+                <div class="error-area" id="error-area"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Emotion Speech Project. Developed by Sudhir Chaturvedi.</p>
+    </footer>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
