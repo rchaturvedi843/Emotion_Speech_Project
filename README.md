@@ -42,4 +42,4 @@ This project leverages Machine Learning (SVM) to detect human emotions from spee
 - HTML5, Vanilla CSS, Vanilla JS
 
 ## Author
-Developed by Sudhir Chaturvedi.
+Developed by Rakesh kumar Chaturvedi.
